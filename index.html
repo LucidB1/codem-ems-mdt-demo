@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1920, height=1080, initial-scale=1.0" />
+  <script>
+    // Fixed 16:9 stage units, set before first paint to avoid a flash. The
+    // app's useStage.js re-applies these and adds resize listeners.
+    (function () {
+      var rW = Math.min(window.innerWidth, window.innerHeight * 16 / 9);
+      var rH = rW * 9 / 16;
+      var s = document.documentElement.style;
+      s.setProperty('--uw', (rW / 100) + 'px');
+      s.setProperty('--uh', (rH / 100) + 'px');
+    })();
+  </script>
+  <title>EMS MDT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="./assets/index-Dop24xb4.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DXm9QyPZ.css">
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
